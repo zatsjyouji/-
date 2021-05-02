@@ -1,0 +1,98 @@
+body{
+    width:980px;
+    margin:auto;
+}
+#text{
+    width: 440px;
+    height: 485px;
+    margin-top:5px;
+    margin-left:5px;
+}
+#menu li{
+    text-align: center;
+    margin-top:20px ;
+    height: 70px;
+    line-height: 70px;
+    border: whitesmoke solid 2px;
+    list-style: none;
+    background-color: black;
+    color:whitesmoke;
+    font-size:30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    margin-right: 40px;
+}
+h1{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size:50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    margin-left: 10px;
+    margin-top:-15px;
+    color:black;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#A{
+    position:relative;
+    top:-10px;
+    height:150px;
+    background: linear-gradient(to right,white,#009b9f);
+}
+#B{
+    /* ここを左側に寄せて、Cを右に設定する方法 */
+    width: 250px;
+    min-height:500px;
+    height: auto;
+    /* 色経由の配置は調整可能 */
+    background: linear-gradient(to left,green 30px,black 70px);
+    float:left;
+    display: block;
+}
+#C{
+    width: 250px;
+    min-height:500px;
+    height: auto;
+    float:right;
+
+    /* 反復線系のグラデーション　の場合repeating-linear-gradientを塩用 */
+    /* background: repeating-linear-gradient(45deg,red,red 5px,blue 5px,blue 10px); */
+    /* 複数の組み合わせ */
+    /* background:repeating-linear-gradient(190deg,rgba(255,0,0,0.5),rgba(255,0,0,0.3) 5px,rgba(255,0,250,0.3) 5px,rgba(255,0,250,0.3) 10px),
+    repeating-linear-gradient(-190deg,yellow,yellow 5px,red 5px,red 10px); */
+/* 扇形のグラディエイト */
+/* background: conic-gradient(from 90deg,red,orange,yellow,green,blue); */
+
+    /* 反射放射グラデーション */
+    background: repeating-radial-gradient(black,black 5px,blue 5px,blue 10px);
+    /* 放射グラデーションの場合radial-gradient 位置の変更*/
+    /* background: radial-gradient(at 0%,red 10px,yellow 30%,blue 60%); */
+}
+#D{
+    margin-left: 260px;
+    width: 460px;
+    min-height: 500px;
+    /* 内容領域における最小値を指定するプロパティ指定しておくとそれ以下にならない */
+    height: auto;
+    /* liner-gradientは何色でも可能 */
+    background: linear-gradient(red,yellow,green,blue,white);
+}
+#E{
+    width: 980px;
+    height: 100px;
+    margin-top: 10px;
+
+    /* グラデーションの付け方 */
+    /* background:linear-gradient(50deg,white,black); */
+    /* 方向の変換方法 最初にtoなんちゃらをつける*/
+    /* 角度の指定は○○deg */
+    /* 0は下から上への垂直　90は左から右への水平　時計回りがdef */
+
+    /* 変化値の中央を％でずらす 30%までブルー*/
+    background: linear-gradient(blue,30%,red);
+    /* 不連続線の生成 */
+    /* background: linear-gradient(to bottom left,red 50%,white 50%); */ */
+}
