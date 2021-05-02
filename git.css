@@ -94,5 +94,8 @@ h2{
     /* 変化値の中央を％でずらす 30%までブルー*/
     background: linear-gradient(blue,30%,red);
     /* 不連続線の生成 */
-    /* background: linear-gradient(to bottom left,red 50%,white 50%); */ */
+    /* background: linear-gradient(to bottom left,red 50%,white 50%); */
+}
+td,th{
+        border:solid 3px black;
 }
