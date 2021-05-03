@@ -8,19 +8,30 @@ body{
     margin-top:5px;
     margin-left:5px;
 }
-#menu li{
+
+a{
+    color: white;
+    text-decoration: none;
+    /* リンクの下のやつとか消すやつ */
+}
+a:active{
+    opacity: 0.5;
+    color: red;
+}
+
+/* #menu li{ */
+p{
     text-align: center;
-    margin-top:20px ;
-    height: 70px;
-    line-height: 70px;
+    margin:20%;
     border: whitesmoke solid 2px;
-    list-style: none;
+    padding:10px;
     background-color: black;
     color:whitesmoke;
     font-size:30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: block;
-    margin-right: 40px;
+    
+    /* メモ */
+    /* line-height: 行間; */
 }
 h1{
     margin-left: 10px;
@@ -45,8 +56,7 @@ h2{
 #B{
     /* ここを左側に寄せて、Cを右に設定する方法 */
     width: 250px;
-    min-height:500px;
-    height: auto;
+    height:500px;
     /* 色経由の配置は調整可能 */
     background: linear-gradient(to left,green 30px,black 70px);
     float:left;
